@@ -54,8 +54,6 @@ app.use('/api', loginApi);
 app.use('/api', logoutApi);
 
 
-
-
 // Start the server on port 3000 (or any port you prefer)
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
