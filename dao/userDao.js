@@ -69,6 +69,8 @@ const deleteUserByIdDao = async (userId) => {
 const getUserByEmailDao = async (email) => {
     try {
         const user = await UserDetails.findOne({ email: email.toLowerCase() }).select('_id email password userType');
+        console.log("haha",user);
+        
         return user;
     } catch (error) {
         console.error('Error fetching user by email:', error);
